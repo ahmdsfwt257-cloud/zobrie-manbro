@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://ci4cmk5k5vroj"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o6xbb"]
+albedo_color = Color(1, 0.8039216, 0.3647059, 1)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_ti8w2"]
+radius = 0.005
+height = 0.02
+
+[node name="Area3D" type="Area3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.50990856, 0)
+material_override = SubResource("StandardMaterial3D_o6xbb")
+mesh = SubResource("CapsuleMesh_ti8w2")
